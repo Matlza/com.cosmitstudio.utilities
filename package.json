@@ -1,0 +1,18 @@
+{
+  "name": "com.cosmitstudio.utilities",
+  "version": "1.0.0",
+  "displayName": "CosmitStudio Utilities",
+  "description": "Some utils from CosmitStudio",
+  "unity": "2019.1",
+ "keywords": [
+    "utilities",
+    "extensions",
+    "cosmitstudio",
+    "cosmit"
+  ],
+  "author": {
+    "name": "Maltza",
+    "email": "",
+    "url": ""
+  }
+}
