@@ -14,5 +14,17 @@
     "name": "Maltza",
     "email": "",
     "url": ""
-  }
+  },
+  "samples": [
+        {
+            "displayName": "Sample Scripts",
+            "description": "Contains scripts",
+            "path": "Samples~/SampleScripts"
+        },
+	{
+            "displayName": "Sample Materials",
+            "description": "Contains materials",
+            "path": "Samples~/SampleMaterials"
+        }
+  ]
 }
