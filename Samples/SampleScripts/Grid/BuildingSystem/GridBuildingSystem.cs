@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+#endif
 
 namespace CosmitStudio.GridSystem.BuildingSystem {
     public class GridBuildingSystem : MonoBehaviour {
@@ -71,6 +74,7 @@ namespace CosmitStudio.GridSystem.BuildingSystem {
             }
         }
 
+#if ENABLE_INPUT_SYSTEM
         void Update() {
             if (Mouse.current.leftButton.wasPressedThisFrame && Utils.Helpers.GetMouseWorldPosition() != Vector3.zero) {
                 _grid.GetXY(Utils.Helpers.GetMouseWorldPosition(), out int x, out int y);
@@ -150,4 +154,5 @@ namespace CosmitStudio.GridSystem.BuildingSystem {
             return _placedObjectTypeSO;
         }
     }
+#endif
 }
