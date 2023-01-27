@@ -132,6 +132,7 @@ namespace CosmitStudio.GridSystem.BuildingSystem {
             if (Keyboard.current.numpad6Key.wasReleasedThisFrame) { _placedObjectTypeSO = _placedObjectTypeSOList[5]; OnSelectedChange?.Invoke(); }
             if (Keyboard.current.numpad7Key.wasReleasedThisFrame) { _placedObjectTypeSO = _placedObjectTypeSOList[6]; OnSelectedChange?.Invoke(); }
         }
+#endif
 
         public Vector3 GetMouseWorldPositionSnappedPosition() {
             _grid.GetXY(Utils.Helpers.GetMouseWorldPosition(), out int x, out int y);
@@ -154,5 +155,4 @@ namespace CosmitStudio.GridSystem.BuildingSystem {
             return _placedObjectTypeSO;
         }
     }
-#endif
 }
